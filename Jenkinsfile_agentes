@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh 'whoami && hostname && echo ${WORKSPACE}'
                 git branch: 'feature/fix-coverage',
-                    url: 'https://github.com/macorman06/Caso-Practico-1---UNIR-DevOps.git'
+                    url: 'https://github.com/macorman06/CP1.2.-DevOps-UNIR.git'
                 stash name: 'source-code', includes: '**/*'
             }
             post {
